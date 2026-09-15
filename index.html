@@ -153,9 +153,10 @@ a{color:var(--rust);text-decoration:none}
 .shot .photo{flex:1}
 
 /* theme placeholders */
-.theme{border:2px dashed var(--lavender);background:rgba(255,255,255,.92);padding:18px 20px}
+.theme{border:1px solid var(--line);border-left:5px solid var(--lavender);background:#fff;padding:14px 20px}
 .theme .n{font-family:var(--head);font-weight:700;color:var(--purple);font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
 .theme .t{font-family:var(--head);font-size:21px;color:var(--charcoal)}
+.theme .d{font-size:14px;color:var(--olive-gray);margin-top:3px;line-height:1.35}
 
 @page{size:1280px 720px;margin:0}
 @media print{html,body{overflow:visible;background:#fff;height:auto}#stage{position:static;display:block}.deck{transform:none!important;box-shadow:none;height:auto!important;min-height:0!important;overflow:visible}.slide{display:flex!important;position:relative;inset:auto;width:1280px;height:720px;page-break-after:always;break-after:page}.slide.bg .content{height:720px}.chrome,.progress,.nav,.hint{display:none}}
@@ -190,7 +191,7 @@ body.overview .chrome,body.overview .progress{display:none}
   <div class="timeline">
     <div class="tl now"><div class="when">Late September</div><div class="what">Walk-through &amp; handover</div><p>The document, the website, the plans.</p></div>
     <div class="tl"><div class="when">October</div><div class="what">Your feedback</div><p>Read it. Click through it. Share it with your board.</p></div>
-    <div class="tl"><div class="when">November – December</div><div class="what">Finalize</div><p>Your changes folded in. Tour StoryMap complete.</p></div>
+    <div class="tl"><div class="when">November – December</div><div class="what">Finalize</div><p>Your changes folded in. Tour finalized.</p></div>
   </div>
 </section>
 
@@ -410,7 +411,7 @@ body.overview .chrome,body.overview .progress{display:none}
     <div class="eyebrow">Section 2</div>
     <h1>Tour</h1>
     <div class="rule"></div>
-    <p class="sub">Bringing the brand narrative onto the grounds — an ArcGIS StoryMap organized by theme.</p>
+    <p class="sub">Bringing the brand narrative onto the grounds — two self-guided walks on the website, told through Eden's section names.</p>
   </div>
 </section>
 
@@ -418,14 +419,15 @@ body.overview .chrome,body.overview .progress{display:none}
 <section class="slide" data-sec="Section 2 · Tour">
   <div class="eyebrow">Eden walking tour · key themes</div>
   <h2>Themes that guide the walk.</h2>
+  <p class="sub" style="margin-bottom:12px">One question at every stop: how does Eden preserve generations of Black life, institution-building, and displacement?</p>
   <div class="row" style="margin-top:6px">
     <div class="col photo frame" style="flex:1"><img src="assets/plan-base.png" alt="Eden section plan" style="object-fit:contain;background:#f5efe3"><div class="cap">Eden's sections · the ground the tour walks</div></div>
     <div class="col" style="flex:1;display:flex;flex-direction:column;gap:12px;justify-content:center">
-      <div class="theme"><div class="n">Theme 1</div><div class="t">[Theme title]</div></div>
-      <div class="theme"><div class="n">Theme 2</div><div class="t">[Theme title]</div></div>
-      <div class="theme"><div class="n">Theme 3</div><div class="t">[Theme title]</div></div>
-      <div class="theme"><div class="n">Theme 4</div><div class="t">[Theme title]</div></div>
-      <div class="dark" style="padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px"><span style="font-family:var(--head);font-size:17px">Live demo · ArcGIS StoryMap</span><span class="btn" style="background:var(--gold);color:var(--ink)">Open →</span></div>
+      <div class="theme"><div class="n">Theme 1</div><div class="t">Black control over burial</div><div class="d">Free African Society, 1787 → Eden's charter, 1902</div></div>
+      <div class="theme"><div class="n">Theme 2</div><div class="t">Displacement and reinterment</div><div class="d">Lebanon and Olive — lost cemeteries whose names live on</div></div>
+      <div class="theme"><div class="n">Theme 3</div><div class="t">Building Eden</div><div class="d">Celestine's first burial · Lehmann and the five founders</div></div>
+      <div class="theme"><div class="n">Theme 4</div><div class="t">Continuity across generations</div><div class="d">Forten → Still → Catto · Whipper → Fauset · Cole, Anderson, Blockson</div></div>
+      <div class="dark" style="padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px"><span style="font-family:var(--head);font-size:15px;line-height:1.3">Live demo · self-guided walks<br><span style="font-size:12px;color:var(--lavender)">Full · 8 stops · 90–120 min &nbsp;|&nbsp; Short · 4 stops · 60 min</span></span><span style="display:flex;gap:8px;flex:0 0 auto"><a class="btn" href="https://1838blackmetropolis.github.io/Eden-Cemetary/tour-long.html" target="_blank" rel="noopener" style="background:var(--gold);color:var(--ink);padding:10px 16px;font-size:14px;white-space:nowrap">Full tour →</a><a class="btn" href="https://1838blackmetropolis.github.io/Eden-Cemetary/tour-short.html" target="_blank" rel="noopener" style="background:var(--gold);color:var(--ink);padding:10px 16px;font-size:14px;white-space:nowrap">Short tour →</a></span></div>
     </div>
   </div>
 </section>
@@ -492,7 +494,7 @@ body.overview .chrome,body.overview .progress{display:none}
   <div class="grid3" style="margin-top:10px">
     <div class="card"><div class="tag">You receive today</div><ul><li>The full document (PDF + Word)</li><li>The live website</li><li>The data folder</li></ul></div>
     <div class="card tint"><div class="tag">Tell us</div><ul><li>Does it sound like Eden?</li><li>What's missing or wrong?</li><li>Which partners first?</li></ul></div>
-    <div class="card"><div class="tag">November – December</div><ul><li>Your feedback folded in</li><li>Tour StoryMap complete</li><li>Final handover</li></ul></div>
+    <div class="card"><div class="tag">November – December</div><ul><li>Your feedback folded in</li><li>Tour pages final</li><li>Final handover</li></ul></div>
   </div>
 </section>
 

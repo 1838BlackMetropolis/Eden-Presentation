@@ -11,5 +11,5 @@ Open `index.html` in a browser, or serve with GitHub Pages (Settings â†’ Pages â
 
 ## Edit
 Each `<section class="slide">` in `index.html` is one slide; `data-sec` sets the footer label.
-Slide 18: replace the `[Theme title]` cards. Slide 18 & 21: add the StoryMap link when it exists.
+Slide 18 links to the self-guided tour pages on the website (`tour-long.html`, `tour-short.html`).
 Images live in `assets/`.
