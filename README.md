@@ -11,5 +11,5 @@ Open `index.html` in a browser, or serve with GitHub Pages (Settings → Pages �
 
 ## Edit
 Each `<section class="slide">` in `index.html` is one slide; `data-sec` sets the footer label.
-Slide 18 links to the self-guided tour pages on the website (`tour-long.html`, `tour-short.html`).
+Slides 19–24 cover how the tour was built (30 slides total). Slide 18 links to the self-guided tour pages on the website (`tour-long.html`, `tour-short.html`).
 Images live in `assets/`.
