@@ -1,0 +1,255 @@
+
+:root {
+  --charcoal-green: #393D32;
+  --cream: #f1e3c8;
+  --cream-soft: #eae8de;
+  --rust: #aa3d1d;
+  --olive: #979a63;
+  --olive-gray: #505448;
+  --gold: #ce9033;
+  --lavender: #b1a5d3;
+  --purple: #947ea8;
+  --ink: #23271d;
+}
+
+html { -weasy-hyphens: none; }
+body {
+  font-family: 'Glacial Indifference', 'Lato', 'Helvetica Neue', Arial, sans-serif;
+  color: var(--ink); font-size: 10.5pt; line-height: 1.55;
+}
+
+/* running title for footer */
+.doctitle-marker { display: none; }
+
+/* ---- Cover ---- */
+.cover { text-align: center; padding-top: 3mm; margin-bottom: 9mm; }
+.cover img { width: 33mm; height: 33mm; margin-bottom: 5mm; }
+.eyebrow {
+  font-family: 'Space Grotesk', 'Lato', sans-serif;
+  font-size: 8.5pt; letter-spacing: 3px; text-transform: uppercase;
+  color: var(--rust); margin-bottom: 4mm;
+}
+h1.title {
+  font-family: 'Space Grotesk', 'Lato', sans-serif;
+  font-size: 27pt; line-height: 1.12; color: var(--charcoal-green);
+  font-weight: 400; margin: 0 0 3mm 0;
+}
+.subtitle {
+  font-family: 'Space Grotesk', 'Lato', sans-serif; font-style: italic;
+  font-size: 12.5pt; color: var(--olive); margin: 0 auto 6mm auto; max-width: 140mm;
+}
+.rule { width: 46mm; height: 2px; background: var(--rust); margin: 0 auto 5mm auto; }
+.prepared {
+  font-family: 'Space Grotesk', 'Lato', sans-serif;
+  font-size: 8pt; letter-spacing: 1px; color: #6f6f52;
+}
+
+/* ---- Part label (major division) ---- */
+.part {
+  font-family: 'Space Grotesk', 'Lato', sans-serif;
+  font-size: 9pt; letter-spacing: 2.5px; text-transform: uppercase;
+  color: var(--cream); background: var(--charcoal-green);
+  padding: 2.5mm 4mm; margin: 9mm 0 5mm 0; break-after: avoid;
+}
+
+/* ---- Headings ---- */
+h2 {
+  font-family: 'Space Grotesk', 'Lato', sans-serif; font-weight: 400;
+  font-size: 15pt; color: var(--charcoal-green);
+  border-bottom: 1.5px solid var(--lavender); padding-bottom: 2mm;
+  margin: 8mm 0 3.5mm 0; break-after: avoid;
+}
+h2 .num { font-family: 'Space Grotesk','Lato',sans-serif; font-size: 10pt; color: var(--rust); margin-right: 3mm; }
+h3 {
+  font-family: 'Space Grotesk', 'Lato', sans-serif; font-weight: 700;
+  font-size: 11.5pt; color: var(--rust); margin: 5mm 0 1.5mm 0; break-after: avoid;
+}
+
+p { margin: 0 0 3mm 0; }
+strong { color: var(--charcoal-green); }
+em { color: var(--olive-gray); }
+ul { margin: 0 0 3.5mm 0; padding-left: 5mm; }
+li { margin-bottom: 1.8mm; }
+li::marker { color: var(--rust); }
+
+/* ---- Cream callout box (statements, "North Star", etc.) ---- */
+.callout {
+  background: #efe7d5; border-left: 3px solid var(--rust);
+  padding: 4.5mm 5.5mm; margin: 4mm 0; break-inside: avoid;
+}
+.callout .label {
+  font-family: 'Space Grotesk','Lato',sans-serif; font-weight: 700;
+  font-size: 8.5pt; letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--rust); display: block; margin-bottom: 2mm;
+}
+.callout p:last-child { margin-bottom: 0; }
+.callout .big {
+  font-family: 'Space Grotesk','Lato',sans-serif; font-style: italic;
+  font-size: 13pt; line-height: 1.4; color: var(--charcoal-green);
+}
+
+/* ---- Dark box (hero / success statements) ---- */
+.darkbox {
+  background: var(--charcoal-green); color: var(--cream);
+  padding: 5.5mm 6.5mm; margin: 5mm 0; break-inside: avoid;
+}
+.darkbox .label {
+  font-family: 'Space Grotesk','Lato',sans-serif; font-weight: 700;
+  font-size: 8.5pt; letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--gold); display: block; margin-bottom: 2.5mm;
+}
+.darkbox p { margin-bottom: 0; }
+.darkbox strong { color: #f0d9c7; }
+
+/* ---- Headline / tagline chips ---- */
+.chips { display: block; margin: 3mm 0 4mm 0; }
+.chip {
+  display: inline-block; font-family: 'Space Grotesk','Lato',sans-serif;
+  font-size: 10pt; color: var(--charcoal-green);
+  background: var(--cream-soft); border: 1px solid #d8cfba;
+  border-radius: 2mm; padding: 1.6mm 3.5mm; margin: 0 2mm 2.5mm 0;
+}
+.chip.accent { background: var(--charcoal-green); color: var(--cream); border-color: var(--charcoal-green); }
+
+/* ---- Tables ---- */
+table { width: 100%; border-collapse: collapse; margin: 3mm 0 4mm 0; font-size: 9.5pt; }
+th {
+  background: var(--charcoal-green); color: var(--cream);
+  font-family: 'Glacial Indifference','Lato',sans-serif; text-align: left;
+  padding: 2.5mm 3mm; font-size: 9pt; letter-spacing: 0.3px;
+}
+td { padding: 2.5mm 3mm; border-bottom: 0.75px solid #d8cfba; vertical-align: top; }
+tr { break-inside: avoid; }
+tr:nth-child(even) td { background: #f3ecdd; }
+td.who { font-family: 'Space Grotesk','Lato',sans-serif; color: var(--charcoal-green); font-weight: 700; }
+
+.lead { font-size: 11pt; color: var(--charcoal-green); }
+
+/* ---- Numbered lists with rust numerals ---- */
+ol.num { list-style: none; counter-reset: item; padding-left: 0; margin: 0 0 3.5mm 0; }
+ol.num li { counter-increment: item; position: relative; padding-left: 9mm; margin-bottom: 2.2mm; }
+ol.num li::before {
+  content: counter(item, decimal-leading-zero); position: absolute; left: 0; top: 0.3mm;
+  font-family: 'Space Grotesk','Lato',sans-serif; font-weight: 700; font-size: 9pt; color: var(--rust);
+}
+ol.num li .sub { display: block; font-style: italic; color: var(--olive-gray); margin-top: 0.8mm; }
+
+/* ---- Workstream overview rows ---- */
+.ws { display: flex; align-items: stretch; margin: 2mm 0; break-inside: avoid; }
+.ws .k {
+  flex: 0 0 34mm; background: var(--charcoal-green); color: var(--cream);
+  font-family: 'Space Grotesk','Lato',sans-serif; font-weight: 700; font-size: 9pt;
+  letter-spacing: 1px; text-transform: uppercase; padding: 2.5mm 3mm;
+}
+.ws .v { flex: 1; background: #f3ecdd; padding: 2.5mm 4mm; }
+.ws .v b { color: var(--charcoal-green); }
+
+/* ---- Appendix ---- */
+.appendix { break-before: page; }
+.appendix .eyebrow { margin-top: 0; }
+.apptitle {
+  font-family: 'Space Grotesk','Lato',sans-serif; font-size: 22pt; color: var(--charcoal-green);
+  margin: 0 0 2mm 0; line-height: 1.15;
+}
+.appsub { font-family: 'Space Grotesk','Lato',sans-serif; font-style: italic; color: var(--olive); font-size: 11.5pt; margin-bottom: 5mm; }
+
+/* ---- Process flow: horizontal phases (table-based) ---- */
+table.flow { width: 100%; border-collapse: separate; border-spacing: 0; margin: 5mm 0 4mm 0; table-layout: fixed; }
+table.flow td { padding: 0; vertical-align: top; border: none; background: none; }
+table.flow td.phase { background: #f7f2e6; border: 1px solid #d8cfba; }
+table.flow td.arrow { width: 8mm; text-align: center; vertical-align: middle;
+  font-family: 'DejaVu Sans', sans-serif; font-size: 20pt; color: var(--rust); }
+.phase .ph { background: var(--charcoal-green); color: var(--cream); padding: 3mm 3.5mm; }
+.phase .ph .days { font-family: 'Space Grotesk','Lato',sans-serif; font-size: 8pt; letter-spacing: 2px; color: var(--gold); text-transform: uppercase; display: block; }
+.phase .ph .nm { font-family: 'Space Grotesk','Lato',sans-serif; font-size: 13.5pt; display: block; margin-top: 0.5mm; }
+.phase .bd { padding: 3.5mm 3.5mm 2.5mm 3.5mm; font-size: 9.5pt; line-height: 1.45; }
+.phase .bd ul { padding-left: 4mm; margin: 0; }
+.phase .bd li { margin-bottom: 2mm; }
+.phase .out { border-top: 1.5px solid var(--rust); margin: 0 3.5mm; padding: 2.5mm 0 3mm 0; font-size: 9pt; }
+.phase .out b { font-family: 'Space Grotesk','Lato',sans-serif; color: var(--rust); font-size: 8pt; letter-spacing: 1.5px; text-transform: uppercase; display: block; margin-bottom: 0.8mm; }
+
+/* strips under a flow (table-based) */
+table.strip { width: 100%; border-collapse: collapse; margin: 3mm 0; table-layout: fixed; }
+table.strip td { border: none; vertical-align: middle; }
+table.strip td.k { width: 34mm; padding: 3mm 3.5mm; font-family: 'Space Grotesk','Lato',sans-serif; font-weight: 700; font-size: 8.5pt; letter-spacing: 1.5px; text-transform: uppercase; }
+table.strip td.v { padding: 3mm 4mm; font-size: 9.5pt; line-height: 1.45; }
+table.strip.guard td.k { background: var(--rust); color: #fff; }
+table.strip.guard td.v { background: #f6e3dc; }
+table.strip.win td.k { background: var(--olive); color: #fff; }
+table.strip.win td.v { background: #eef0df; }
+
+/* ---- Process flow: vertical steps with rail (table-based) ---- */
+table.step { width: 100%; border-collapse: separate; border-spacing: 0; margin: 0; table-layout: fixed; break-inside: avoid; }
+table.step td { padding: 0; border: none; vertical-align: top; background: none; }
+table.step td.badge { width: 16mm; text-align: center; padding-top: 1mm; }
+.conn { width: 1.2mm; height: 3.5mm; background: var(--lavender); margin: 0 0 0 7.4mm; }
+.circ { width: 11mm; height: 11mm; border-radius: 50%; background: var(--charcoal-green); color: var(--cream);
+  font-family: 'Space Grotesk','Lato',sans-serif; font-weight: 700; font-size: 12pt; line-height: 11mm;
+  text-align: center; margin: 0 auto; }
+.dia { width: 8mm; height: 8mm; background: var(--gold); transform: rotate(45deg); margin: 2.5mm auto; }
+table.step td.main { background: #f7f2e6; border: 1px solid #d8cfba; border-right: none; padding: 2.5mm 3.5mm; }
+table.step td.side { width: 52mm; background: #efe7d5; border: 1px solid #d8cfba; padding: 2.5mm 3.5mm; font-size: 8.8pt; }
+.ttl { font-family: 'Space Grotesk','Lato',sans-serif; font-size: 12.5pt; color: var(--charcoal-green); margin-bottom: 1mm; }
+.tag { font-family: 'Space Grotesk','Lato',sans-serif; font-size: 8pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--rust); display: block; margin-bottom: 1mm; }
+table.step p { margin: 0; font-size: 9.1pt; line-height: 1.4; }
+table.step ul { margin: 0; padding-left: 4mm; font-size: 9pt; }
+table.step li { margin-bottom: 0.8mm; }
+
+table.step td.q { width: 52mm; background: var(--charcoal-green); color: var(--cream); padding: 2.5mm 3.5mm; }
+table.step td.q .tag { color: var(--gold); }
+table.step td.q .t { font-family: 'Space Grotesk','Lato',sans-serif; font-size: 12pt; line-height: 1.3; }
+table.step td.brs { padding-left: 3mm; }
+.yes, .no { padding: 2.2mm 3.5mm; font-size: 9pt; line-height: 1.4; }
+.yes { background: #eef0df; border-left: 3px solid var(--olive); margin-bottom: 2mm; }
+.no { background: #f6e3dc; border-left: 3px solid var(--rust); }
+b.lbl { font-family: 'Space Grotesk','Lato',sans-serif; font-size: 8pt; letter-spacing: 1.5px; text-transform: uppercase; display: block; margin-bottom: 0.5mm; }
+.yes b.lbl { color: var(--olive); }
+.no b.lbl { color: var(--rust); }
+
+.principle {
+  margin-top: 4mm; background: var(--charcoal-green); color: var(--cream); padding: 4mm 5mm;
+  font-family: 'Space Grotesk','Lato',sans-serif; font-style: italic; font-size: 11.5pt; line-height: 1.4; break-inside: avoid;
+}
+
+/* pitch number badge */
+.pitch { break-inside: avoid; margin-bottom: 5mm; }
+.pitch h3 { display: flex; align-items: baseline; }
+.pitchnum {
+  font-family: 'Space Grotesk','Lato',sans-serif; color: var(--rust);
+  font-size: 10pt; margin-right: 3mm;
+}
+
+/* compact platform strip */
+table.plat { width:100%; border-collapse:separate; border-spacing:2mm 0; margin:2mm -2mm 0 -2mm; table-layout:fixed; }
+table.plat td { background:#f3ecdd; border:none; border-top:2.5px solid var(--rust); padding:2.5mm 3mm; vertical-align:top; font-size:8.8pt; line-height:1.38; }
+table.plat td b { display:block; font-family:'Space Grotesk','Lato',sans-serif; color:var(--charcoal-green); font-size:9.5pt; margin-bottom:0.8mm; }
+
+
+
+/* ---------- classes used by the memo-style documents (tech architecture, tour scripts) ---------- */
+.pull { font-family: 'Space Grotesk','Lato',sans-serif; font-size: 14pt; font-style: italic; line-height: 1.4; color: var(--charcoal-green); background: #efe7d5; border-left: 3px solid var(--rust); padding: 5mm 6mm; margin: 5mm 0; }
+.closing { background: var(--charcoal-green); color: var(--cream); padding: 6mm 7mm; margin-top: 6mm; }
+.closing h2 { color: var(--cream); border-bottom: 1.5px solid var(--rust); margin-top: 0; }
+.closing strong { color: #f0d9c7; }
+.avoid { color: var(--rust); font-weight: 600; }
+
+/* ---------- web shell (added for the deliverables site) ---------- */
+html { background: #eae8de; }
+body { margin: 0; background: #eae8de; }
+.topbar { background: #393D32; color: #f1e3c8; font-family: 'Space Grotesk','Lato',sans-serif; font-size: 13px; letter-spacing: .5px; }
+.topbar .in { max-width: 860px; margin: 0 auto; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+.topbar a { color: #f1e3c8; text-decoration: none; border-bottom: 1px solid #ce9033; padding-bottom: 1px; }
+.topbar a:hover { color: #fff; border-color: #fff; }
+.topbar .org { color: #ce9033; text-transform: uppercase; letter-spacing: 2px; font-size: 11px; }
+.paper { max-width: 860px; margin: 28px auto 48px; background: #fff; padding: 56px 64px 64px; box-shadow: 0 2px 14px rgba(35,39,29,.10); font-size: 15px; line-height: 1.6; }
+.paper .appendix { break-before: auto; border-top: 1px solid #d8cfba; margin-top: 48px; padding-top: 40px; }
+.paper .cover img { width: 120px; height: 120px; }
+.paper h1.title { font-size: 34px; }
+.paper .subtitle { font-size: 17px; }
+.paper h2 { font-size: 21px; }
+.paper .pull, .paper .callout .big { font-size: 18px; }
+.paper table { font-size: 14px; }
+.paper .phase .bd, .paper .yes, .paper .no { font-size: 13.5px; }
+.sitefoot { text-align: center; font-family: 'Space Grotesk','Lato',sans-serif; font-size: 12px; color: #6f6f52; letter-spacing: .5px; padding: 0 20px 40px; }
+@media (max-width: 720px) { .paper { padding: 32px 22px 40px; margin: 16px 12px 32px; font-size: 15px; } .paper h1.title { font-size: 27px; } }
+@media print { html, body { background: #fff; } .topbar, .sitefoot { display: none; } .paper { box-shadow: none; margin: 0; padding: 0; max-width: none; } }
